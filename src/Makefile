@@ -28,11 +28,11 @@ include depends.txt
 
 .PHONY : clean
 clean:
-	rm libhashi.a depends.txt hashi_text display.o hashi_text.o node.o
+	rm libhashi.a depends.txt hashi_text display.o hashi_text.o node.o *# *~
 
 .PHONY : cleanTest
 cleanTest:
-	rm ./tests/test ./tests/test_game1.o ./tests/test_toolbox.o libhashi.a depends.txt node.o
+	rm ./tests/test ./tests/test_game1.o ./tests/test_toolbox.o libhashi.a depends.txt node.o *# *~
 
 
 depends.txt : $(SOURCE)
